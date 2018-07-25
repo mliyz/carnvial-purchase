@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="account-service" />
+        <module name="admin-server" />
+        <module name="common-module" />
+        <module name="conf-server" />
+        <module name="eureka-server" />
+        <module name="front-app" />
+        <module name="hystrix-dashboard" />
+        <module name="msg-service" />
+        <module name="order-service" />
+        <module name="payment-service" />
+        <module name="product-service" />
+        <module name="sleuth-server" />
+        <module name="turbine-server" />
+        <module name="zuul-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account-service" target="1.8" />
+      <module name="admin-server" target="1.8" />
+      <module name="base-server" target="1.8" />
+      <module name="carnival-purchase" target="1.8" />
+      <module name="common-module" target="1.8" />
+      <module name="conf-server" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="front-app" target="1.8" />
+      <module name="hystrix-dashboard" target="1.8" />
+      <module name="msg-service" target="1.8" />
+      <module name="order-service" target="1.8" />
+      <module name="payment-service" target="1.8" />
+      <module name="product-service" target="1.8" />
+      <module name="sleuth-server" target="1.8" />
+      <module name="turbine-server" target="1.8" />
+      <module name="zuul-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

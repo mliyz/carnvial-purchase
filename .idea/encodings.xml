@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$USER_HOME$/AppData/Local/Temp/config-repo-1204091797439430252/respodev/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../../../../GitHub/SpringcloudConfig/respodev/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-server/admin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-server/conf-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-server/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-server/hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-server/sleuth-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-server/turbine-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-server/zuul-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/front-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/msg-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product-service" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,55 @@
+server:
+  port: 8084
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:9003/eureka/
+spring:
+  application:
+    name: msg-service
+  zipkin:
+    base-url: http://localhost:9001
+  boot:
+    admin:
+      url: http://localhost:9002
+  #mysql database config
+  datasource:
+    url: jdbc:mysql://localhost:3306/micro_msg?useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull
+    #use jasypt to encrypt username/password
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+     # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 1
+    minIdle: 1
+    maxIdle: 5
+    maxActive: 50
+    maxWait: 10000
+    timeBetweenEvictionRunsMillis: 10000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+    filters: stat
+
+    mapperLocations: classpath:mapper/*.xml
+    typeAliasPackage: com.splendid.common.bean
+
+#pagehelper
+pagehelper:
+  helper-dialect: mysql
+  reasonable: false
+  support-methods-arguments: true
+  params: count=countSql
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.splendid.common.bean
+management:
+  security:
+    enabled: false

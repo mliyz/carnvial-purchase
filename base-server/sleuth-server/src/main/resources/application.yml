@@ -1,0 +1,60 @@
+server:
+  port: 9001
+spring:
+  boot:
+    admin:
+      url: http://localhost:9002
+  application:
+    name: zipkin-server
+    zipkin:
+      #服务端地址
+      base-url: http://${eureka.instance.hostname}:9001
+      #本项目服务名
+      service:
+        name: ${spring.application.name}
+  sleuth:
+    #采样率
+    sampler:
+      percentage: 1.0
+    #监控开关
+    enabled: false
+
+eureka:
+  instance:
+      hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:9003/eureka/
+
+  #mysql config
+#  datasource:
+#      driver-class-name: com.mysql.jdbc.Driver
+#      url: jdbc:mysql://localhost:3306/vehiclemart_dev?useUnicode=true&characterEncoding=utf8&useSSL=false
+#      username: root
+#      password: 1234
+#      test-on-borrow: true
+#      validation-query: select 1
+#      initial-size: 50
+#      max-active: 50
+#      max-idle: 50
+#      min-idle: 50
+#      initialize: true
+#      continue-on-error: true
+#  sleuth:
+#    enabled: false
+#resolve up problems
+management:
+  security:
+    enabled: false
+#elasticsearch config
+#zipkin:
+#  storage:
+#    type: mysql   #mysql  elasticsearch
+#    elasticsearch:
+#      hosts: 127.0.0.1:9200
+#      cluster: elasticsearch
+#      index: zipkin
+#      index-shards: 5
+#      index-replicas: 1
+
+

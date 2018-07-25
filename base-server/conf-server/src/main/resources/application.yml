@@ -1,0 +1,39 @@
+server:
+  port: 9004
+logging:
+  level:
+    tk:
+      mybatis: TRACK
+spring:
+  application:
+    name: config-server
+  cloud:
+      config:
+        server:
+          git:
+            uri: https://github.com/mliyz/SpringcloudConfig/
+            search-paths: respodev
+            username: mliyz
+            password: liyuzhang
+        label: master
+  boot:
+    admin:
+      url: http://${eureka.instance.hostname}:9002
+  rabbitmq:
+        host: localhost
+        port: 5672
+        username: guest
+        password: guest
+eureka:
+  instance:
+      hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:9003/eureka/
+management:
+  security:
+    enabled: false
+security:
+  user:
+    name: mliyz
+    password: liyuzhang

@@ -1,0 +1,39 @@
+server:
+  port: 9943
+#  max-threads: 2000
+#  max-connections: 2000
+logging:
+  level:
+    tk:
+      mybatis: TRACK
+spring:
+  application:
+    name: front-app
+  boot:
+    admin:
+#      client:
+#        service-url: http://localhost:9002
+      url: http://localhost:9002
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:9003/eureka/
+management:
+  security:
+    enabled: false
+
+account-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000

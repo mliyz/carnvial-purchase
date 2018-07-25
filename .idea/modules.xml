@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/account-service/account-service.iml" filepath="$PROJECT_DIR$/account-service/account-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-server/admin-server/admin-server.iml" filepath="$PROJECT_DIR$/base-server/admin-server/admin-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-server/base-server.iml" filepath="$PROJECT_DIR$/base-server/base-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-server.iml" filepath="$PROJECT_DIR$/base-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carnival-purchase.iml" filepath="$PROJECT_DIR$/carnival-purchase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-module/common-module.iml" filepath="$PROJECT_DIR$/common-module/common-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-server/conf-server/conf-server.iml" filepath="$PROJECT_DIR$/base-server/conf-server/conf-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-server/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/base-server/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/front-app/front-app.iml" filepath="$PROJECT_DIR$/front-app/front-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-server/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/base-server/hystrix-dashboard/hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msg-service/msg-service.iml" filepath="$PROJECT_DIR$/msg-service/msg-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-service.iml" filepath="$PROJECT_DIR$/order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-service/payment-service.iml" filepath="$PROJECT_DIR$/payment-service/payment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-service/product-service.iml" filepath="$PROJECT_DIR$/product-service/product-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-server/sleuth-server/sleuth-server.iml" filepath="$PROJECT_DIR$/base-server/sleuth-server/sleuth-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-server/turbine-server/turbine-server.iml" filepath="$PROJECT_DIR$/base-server/turbine-server/turbine-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-server/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/base-server/zuul-server/zuul-server.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      name: front-app
+      profile: dev
+      label: master
+      uri: http://localhost:9004/
+#      discovery:
+#        enabled: true  #从配置中心读取文件。
+#        service-id: CONFIG-SERVER  #配置中心的servieId，即服务名
+      username: mliyz
+      password: liyuzhang
+      fail-fast: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

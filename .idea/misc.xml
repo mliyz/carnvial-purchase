@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/base-server/pom.xml" />
+        <option value="$PROJECT_DIR$/base-server/admin-server/pom.xml" />
+        <option value="$PROJECT_DIR$/base-server/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/base-server/conf-server/pom.xml" />
+        <option value="$PROJECT_DIR$/base-server/hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/base-server/sleuth-server/pom.xml" />
+        <option value="$PROJECT_DIR$/base-server/turbine-server/pom.xml" />
+        <option value="$PROJECT_DIR$/base-server/zuul-server/pom.xml" />
+        <option value="$PROJECT_DIR$/common-module/pom.xml" />
+        <option value="$PROJECT_DIR$/account-service/pom.xml" />
+        <option value="$PROJECT_DIR$/front-app/pom.xml" />
+        <option value="$PROJECT_DIR$/msg-service/pom.xml" />
+        <option value="$PROJECT_DIR$/order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/payment-service/pom.xml" />
+        <option value="$PROJECT_DIR$/product-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

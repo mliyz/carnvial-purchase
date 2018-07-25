@@ -1,0 +1,49 @@
+server:
+  port: 9005
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:9003/eureka/
+
+spring:
+  application:
+    name: zuul-server
+  boot:
+    admin:
+      url: http://localhost:9002
+  zipkin:
+    base-url: http://localhost:9001
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+#resolved up problems
+management:
+  security:
+    enabled: false
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeout-in-milliseconds: 3000
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+# routes to serviceId,simple cases,wo usually use eureka client to discovery the service instead of to configure it like down below
+zuul:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+  routes:
+    api-account:
+      path: /account-api/**
+      serviceId: account-service
+
+
+

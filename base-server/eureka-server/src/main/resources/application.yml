@@ -1,0 +1,23 @@
+server:
+  port: 9003
+eureka:
+  instance:
+      hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/euerka/
+  server:
+    enable-self-preservation: false
+spring:
+  boot:
+    admin:
+      url: http://${eureka.instance.hostname}:9002
+#resolved up problems
+management:
+  security:
+    enabled: false
+
+
+
